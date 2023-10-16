@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>PDA Simulator Web</title>
+  </head>
+  <body>
+    <h1 id="title">PDA Simulator</h1>
+    <p>
+      This webpage provides an overview of PDA Simulator along with instructions
+      on how to download and run PDA Simulator. You can view the source code for
+      PDA Simulator at this
+      <a href="https://github.com/rambo37/PDA-Simulator">GitHub repository</a>.
+    </p>
+    <section id="overview">
+      <h2>Overview</h2>
+      <p>
+        PDA Simulator is a visual, animated simulator for pushdown automata,
+        created using Java and JavaFX. It allows you to construct pushdown
+        automata and simulate their execution on any input string. As there are
+        various defintions of pushdown automata used in literature, PDA
+        Simulator offers support for multiple definitions, making it likely that
+        it can model the definition(s) you are familiar with. However, it is
+        important to note that the differences are only superficial; all
+        defintions are equally expressive (they can recognise all context-free
+        languages). The simulator elaborates on this in the help menu.
+      </p>
+      <p>Here is a list of the features of PDA Simulator:</p>
+      <ul>
+        <li>
+          Lets you create, edit, save and load existing pushdown automata (and
+          optionally any notes)
+        </li>
+        <li>
+          Displays both a transition table and diagram view at the same time,
+          both of which can be used to edit the PDA
+        </li>
+        <li>
+          Lets you move multiple states simultaneously by highlighting an area
+          that contains all states and then moving any of those states
+        </li>
+        <li>
+          Automatically handles the positioning of the transition arrows and
+          their labels as you move the states around to prevent overlapping of
+          labels
+        </li>
+        <li>
+          Lets you switch between different pushdown automata definitions at any
+          time without having to start over
+        </li>
+        <li>
+          Lets you undo and redo successive changes (including moving of PDA
+          states)
+        </li>
+        <li>
+          Shows you whether the PDA you are working on is deterministic or not
+          as you edit it
+        </li>
+        <li>Lets you highlight all transitions that cause nondeterminism</li>
+
+        <li>
+          Can simulate automaton execution on inputs in 3 different modes,
+          step-by-step mode, animation mode and quick-run mode:
+          <ul>
+            <li>
+              Step-by-step mode allows you to manually step through a
+              computation and presents all choices if there is nondeterminism,
+              so you can advance whichever computation(s) you are interested in
+            </li>
+            <li>
+              Animation mode allows you to watch the automaton execution
+              step-by-step automatically, and control the speed of the animation
+            </li>
+            <li>
+              Quick-run mode allows you to see instantly how many (if any)
+              accepting computations can be found within a certain step limit,
+              and to increase the step limit and try again if no accepting
+              computations were found within the step limit
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          Contains a comprehensive help menu that explains how to use the
+          simulator
+        </li>
+        <li>
+          Contains 5 sample PDAs with some notes for you to experiment with
+        </li>
+      </ul>
+      <div style="height: 30px"></div>
+      <div id="screenshots">
+        <h3>Screenshots</h3>
+        <p>Here are some screenshots of the PDA Simulator application.</p>
+        <div>
+          <figure>
+            <img src="/screenshots/screenshot1.png" alt="PDA Simulator Main View" />
+            <figcaption>This is the main view of PDA Simulator.</figcaption>
+          </figure>
+          <figure>
+            <img src="/screenshots/screenshot2.png" alt="PDA Simulator Animation Mode" />
+            <figcaption>
+              This is the animation mode of PDA Simulator.
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="/screenshots/screenshot3.png" alt="PDA Simulator Step-by-step Mode" />
+            <figcaption>
+              This is the step-by-step mode of PDA Simulator.
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="/screenshots/screenshot4.png" alt="PDA Simulator Quick-run Mode" />
+            <figcaption>
+              This is the quick-run mode of PDA Simulator.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="instructions">
+      <h2>Installation instructions</h2>
+      <a href="/PDA-Simulator.jar" download>Download PDA Simulator</a>
+      <p>
+        PDA Simulator can be downloaded using the link above. In order to run
+        the executable JAR file, you will need to have JRE/JDK version 8 (or a
+        later version) installed on your computer. You can download the latest
+        version from the
+        <a href="https://www.oracle.com/java/technologies/downloads/"
+          >official Oracle website</a
+        >. The JAR file already includes the necessary JavaFX runtime libraries,
+        so there's no need to install JavaFX separately.
+      </p>
+      <p>
+        Once you have installed Java on your computer, simply double-click the
+        downloaded JAR file to run it.
+      </p>
+    </section>
+  </body>
+</html>
